@@ -14,9 +14,15 @@ router.get('/',function(req,res){
   res.sendFile(path + 'index.html');
 });
 
-router.get('/sharks',function(req,res){
+router.get('/shar',function(req,res){
   res.sendFile(path + 'sharks.html');
 });
+
+router.get('/webempresa',function(req,res){
+  res.sendFile(path + 'webempresa.html');
+});
+
+
 
 app.use(express.static(path));
 app.use('/', router);
